@@ -8,14 +8,14 @@ The project consists of two phases:
 Phase 1: Train Face Mask Detector
 Phase 2: Apply Face Mask Detector
 
-1.1.1 ####	Tools
+1.1.1 	Tools
 The tools used for developing the two phases are:
 1)	Google Colab
 2)	Python
 3)	Keras
 4)	Tensor Flow
 
-1.1.1.1	#### Data Source
+1.1.1.1	 Data Source
 The dataset for the project is a face mask detection dataset from Kaggle. It consists of 6024 images containing images of people with face masks and without face masks. 
 A CSV file contains information about each image and classifies each image based on whether the person is wearing a face mask or not.
  
@@ -29,7 +29,7 @@ In the training phase, the fask mask detection dataset is downloaded from the di
  
 
 
-2.1.1.1 ####	ALGORITHMS 
+2.1.1.1 ###	ALGORITHMS 
 ### Phase 1: Train Face Mask Detector###
 In this phase, we are going to make a classifier that can differentiate between faces with masks and faces without masks. 
 In order to create this classifier, we need data in the form of images. This is obtained from the dataset which contains images of faces with mask and without masks.
