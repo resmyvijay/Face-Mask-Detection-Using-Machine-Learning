@@ -2,24 +2,24 @@
 The Covid=19 virus has affected large number of people all around the world due to its highly infectious nature and no cure available. The Covid-19 virus spreads aerially when the infected person coughs, sneezes, talks or sings. One way of preventing the spread of the virus is through wearing facemasks that prevent spread of the virus from the infected person to a non-infected person. It has become mandatory in many countries to wear face masks.
 Through use of machine learning, we can detect whether a person is wearing a face mask or not by analyzing the image of a person or a live video stream. This project is on creating a python program for detecting face masks in images. It can determine to a high level of accuracy if a person seen through an image or a video stream is wearing a face mask or not. This can be used at entrances to public places in order to enforce the regulation of wearing masks.
 This project uses Python with Tensorflow/Keras along with OpenCV Classifier to train a face mask detector and detect facemasks in images.
-1.1	### Objectives ###
+1.1	### Objectives 
 To build a face mask detector with computer vision and deep learning using Python, Open CV and TensorFlow/Keras.
 The project consists of two phases:
 Phase 1: Train Face Mask Detector
 Phase 2: Apply Face Mask Detector
 
-1.1.1 ####	Tools####
+1.1.1 ####	Tools
 The tools used for developing the two phases are:
 1)	Google Colab
 2)	Python
 3)	Keras
 4)	Tensor Flow
 
-1.1.1.1	#### Data Source####
+1.1.1.1	#### Data Source
 The dataset for the project is a face mask detection dataset from Kaggle. It consists of 6024 images containing images of people with face masks and without face masks. 
 A CSV file contains information about each image and classifies each image based on whether the person is wearing a face mask or not.
  
- ### ANALYSIS AND DESIGN###
+ ### ANALYSIS AND DESIGN
 There are two phases to the development of the face mask detector.
 1)	Training
 In the training phase, the fask mask detection dataset is downloaded from the disk, a model is trained using this dataset, and then saved to be used during the deployment phase.
@@ -29,7 +29,7 @@ In the training phase, the fask mask detection dataset is downloaded from the di
  
 
 
-2.1.1.1 ####	ALGORITHMS ####
+2.1.1.1 ####	ALGORITHMS 
 ### Phase 1: Train Face Mask Detector###
 In this phase, we are going to make a classifier that can differentiate between faces with masks and faces without masks. 
 In order to create this classifier, we need data in the form of images. This is obtained from the dataset which contains images of faces with mask and without masks.
@@ -39,7 +39,7 @@ The dataset is then split into training and testing sets to evaluate them. The n
 The model is then compiled and trained on the augmented data.
 After the model is trained, it is saved for later use.
 
- ### Phase 2: Apply Facemask Detector###
+ ### Phase 2: Apply Facemask Detector
 With the trained model, we can now apply it to images and detect is the image has a face mask or not. 
 First, we need images of faces. This is obtained by opening the webcam through OpenCV code. Next, we get the frames from the webcam stream using the read() function. 
 In actual application, this would be done in infinite look to get all the frames till the time we want to close the stream. But, for the sake of project, we use Google Colab code snippet to capture an image and send it for detection.
