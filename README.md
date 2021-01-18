@@ -29,8 +29,8 @@ In the training phase, the fask mask detection dataset is downloaded from the di
  
 
 
-2.1.1.1 ###	ALGORITHMS 
-### Phase 1: Train Face Mask Detector###
+2.1.1.1 ALGORITHMS 
+### Phase 1: Train Face Mask Detector
 In this phase, we are going to make a classifier that can differentiate between faces with masks and faces without masks. 
 In order to create this classifier, we need data in the form of images. This is obtained from the dataset which contains images of faces with mask and without masks.
 As the images are very less in number, we cannot train the neural network from scratch. Instead, we finetune a pre-trained network called MobileNetV2 which is trained on the ImageNet dataset. 
